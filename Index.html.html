@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammed Erziku Yenus - Biomedical Engineer</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+            --text-color: #34495e;
+            --background-color: #fff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+        
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        section {
+            margin-bottom: 2.5rem;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+        
+        h3 {
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+        
+        .education-item, .award-item, .experience-item, .publication-item {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            border-left: 3px solid var(--secondary-color);
+            background-color: #f9f9f9;
+        }
+        
+        .date {
+            color: var(--accent-color);
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .card {
+            background-color: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .skills-list {
+            list-style-type: none;
+        }
+        
+        .skills-list li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .skills-list li:before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: var(--secondary-color);
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+        
+        @media (min-width: 768px) {
+            .header-content {
+                flex-direction: row;
+                justify-content: space-between;
+                text-align: left;
+            }
+            
+            .contact-info {
+                justify-content: flex-end;
+            }
+        }
+        
+        @media print {
+            body {
+                font-size: 12pt;
+                color: #000;
+                background: #fff;
+            }
+            
+            header {
+                background: #2c3e50 !important;
+                color: #000;
+                -webkit-print-color-adjust: exact;
+            }
+            
+            .education-item, .award-item, .experience-item, .publication-item, .card {
+                border: 1px solid #ddd;
+                box-shadow: none;
+            }
+            
+            footer {
+                background: #2c3e50 !important;
+                color: #000;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div>
+                    <h1>Muhammed Erziku Yenus</h1>
+                    <p>Biomedical Engineer | Researcher | Educator</p>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span>📱</span>
+                        <span>+251910154940</span>
+                    </div>
+                    <div class="contact-item">
+                        <span>📧</span>
+                        <span>muhammederziku9@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <span>📍</span>
+                        <span>Addis Ababa, Ethiopia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>MSc in Biomedical Instrumentation and Imaging</h3>
+                <p class="date">February 2021</p>
+                <p>Addis Ababa University</p>
+            </div>
+            <div class="education-item">
+                <h3>BSc in Biomedical Engineering</h3>
+                <p class="date">June 2016</p>
+                <p>Jimma University</p>
+            </div>
+        </section>
+
+        <section id="awards">
+            <h2>Honours and Awards</h2>
+            <div class="award-item">
+                <h3>11-month master's credit-seeking mobility</h3>
+                <p class="date">2019</p>
+                <p>Cairo University as a visiting research student</p>
+            </div>
+            <div class="award-item">
+                <h3>Jim Leech Mastercard Foundation Fellowship on Entrepreneurship</h3>
+                <p class="date">2022</p>
+            </div>
+            <div class="award-item">
+                <h3>Seed grant from Armauer Hansen Research Institute</h3>
+                <p class="date">2023/24</p>
+                <p>Project: "Early Detection of Kidney Disease Using Human Breath" through Grand Challenges Ethiopia program</p>
+            </div>
+            <div class="award-item">
+                <h3>Seed grant through Grand Challenges Ethiopia program</h3>
+                <p>Project: "Design and Execution of Low-Cost Repetitive Transcranial Magnetic Stimulation Device for Treating Major Depression Disorder and Other Mental Illnesses"</p>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Research and Development Experience</h2>
+            <div class="experience-item">
+                <h3>Dissertation</h3>
+                <p class="date">2021</p>
+                <p>Addis Ababa University, Ethiopia</p>
+                <p>Supervisor: Dr. Dawit Assefa (dawit.assefa@aau.edu.et)</p>
+                <p>Simulation framework for magnetic resonance fingerprinting (MRF) using spiral under sampling</p>
+            </div>
+        </section>
+
+        <section id="work">
+            <h2>Other Work Experience</h2>
+            <div class="experience-item">
+                <h3>Summer school design</h3>
+                <p class="date">November 2015 - January 2015</p>
+                <p>UNECA, ABEC, Addis Ababa University</p>
+                <p>Addis Ababa, Ethiopia</p>
+            </div>
+            <div class="experience-item">
+                <h3>First International Conference on Collaborative Biomedical Engineering for Open-Source Medical Technologies</h3>
+                <p class="date">September 2018</p>
+                <p>UBORA, UNECA, ABEC, University of Pisa</p>
+                <p>Pisa, Italy</p>
+            </div>
+            <div class="experience-item">
+                <h3>UBORA Design School 2018</h3>
+                <p class="date">September 2018</p>
+                <p>UBORA, UNECA, ABEC, University of Pisa</p>
+                <p>Pisa, Italy</p>
+            </div>
+        </section>
+
+        <section id="publications">
+            <h2>Publications</h2>
+            <div class="publication-item">
+                <h3>Journal Publication</h3>
+                <p>Erziku.M, et al. "Accelerated Identification of Kidney failure via Exhaled Breath Biomarkers" ASRIC Journal on Health Sciences Vol.4(1)(2024) 10-14</p>
+            </div>
+        </section>
+
+        <section id="presentations">
+            <h2>Presentations and Invited Lectures</h2>
+            <div class="experience-item">
+                <h3>Paper Presentation</h3>
+                <p>"Accelerated Identification of Kidney Failure via Exhaled Breath Biomarkers"</p>
+                <p>ASRIC Scientific Conference Presentation, 2024</p>
+            </div>
+            <div class="experience-item">
+                <h3>Workshop</h3>
+                <p>"Magnetic resonance fingerprinting for tissue discrimination"</p>
+                <p>Brain, Mind, and Body: Cognitive Neuroengineering for Health and Wellness a Virtual Symposium and Workshop, December 15-16, 2021</p>
+            </div>
+        </section>
+
+        <section id="affiliations">
+            <h2>Professional Affiliations</h2>
+            <div class="experience-item">
+                <h3>University of Gondar</h3>
+                <p class="date">2016-Present</p>
+                <p>Teaching, Research, and Community Service</p>
+            </div>
+        </section>
+
+        <section id="community">
+            <h2>Community Service</h2>
+            <div class="experience-item">
+                <p>Community service engagement in the installation and maintenance of medical devices in war affected areas of North and South Wello, Amhara, Ethiopia in 2022.</p>
+                <p>As a Biomedical Engineering academic staff at University of Gondar, I have demonstrated remarkable dedication and skill in addressing critical healthcare challenges in communities severely impacted by the northern parts of Ethiopian conflict.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills and Competences</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <h3>Languages</h3>
+                    <ul class="skills-list">
+                        <li>English: Advanced Reading and Writing</li>
+                        <li>Amharic: Native Language</li>
+                        <li>Arabic: Intermediate Listener</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Skills and Expertise</h3>
+                    <ul class="skills-list">
+                        <li>Biomedical Engineering (Design, Simulation, Maintenance)</li>
+                        <li>Bioinformatics (Data Analysis, Programming with Python and Matlab)</li>
+                        <li>Research and Innovation</li>
+                        <li>Project Management and Collaboration</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Other Interests</h3>
+                    <ul class="skills-list">
+                        <li>Reading</li>
+                        <li>Swimming</li>
+                        <li>Following Technological Advancements</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="references">
+            <h2>References</h2>
+            <div class="card">
+                <h3>Dr. Dawit Assefa Haile</h3>
+                <p>Department of Biomedical Engineering</p>
+                <p>Addis Ababa University</p>
+                <p>Mailing Address: Addis Ababa</p>
+                <p>Phone: +251922759688</p>
+                <p>Email: dawit.assefa@aau.edu.et</p>
+                <p>Relationship: Advisor</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Muhammed Erziku Yenus | Biomedical Engineer</p>
+        </div>
+    </footer>
+</body>
+</html>
